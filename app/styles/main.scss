@@ -1,0 +1,136 @@
+// $icon-font-path: '../fonts/';
+@import "variables";
+// bower:scss
+@import "bootstrap-sass/assets/stylesheets/bootstrap/_variables.scss";
+@import "bootstrap-sass/assets/stylesheets/bootstrap/_mixins.scss";
+@import "bootstrap-sass/assets/stylesheets/bootstrap/_scaffolding.scss";
+@import "bootstrap-sass/assets/stylesheets/bootstrap/_type.scss";
+@import "bootstrap-sass/assets/stylesheets/bootstrap/_code.scss";
+@import "bootstrap-sass/assets/stylesheets/bootstrap/_grid.scss";
+@import "bootstrap-sass/assets/stylesheets/bootstrap/_tables.scss";
+@import "bootstrap-sass/assets/stylesheets/bootstrap/_forms.scss";
+@import "bootstrap-sass/assets/stylesheets/bootstrap/_buttons.scss";
+@import "bootstrap-sass/assets/stylesheets/bootstrap/_dropdowns.scss";
+@import "bootstrap-sass/assets/stylesheets/bootstrap/_button-groups.scss";
+@import "bootstrap-sass/assets/stylesheets/bootstrap/_input-groups.scss";
+@import "bootstrap-sass/assets/stylesheets/bootstrap/_navs.scss";
+@import "bootstrap-sass/assets/stylesheets/bootstrap/_navbar.scss";
+@import "bootstrap-sass/assets/stylesheets/bootstrap/_breadcrumbs.scss";
+@import "bootstrap-sass/assets/stylesheets/bootstrap/_pagination.scss";
+@import "bootstrap-sass/assets/stylesheets/bootstrap/_pager.scss";
+@import "bootstrap-sass/assets/stylesheets/bootstrap/_labels.scss";
+@import "bootstrap-sass/assets/stylesheets/bootstrap/_badges.scss";
+@import "bootstrap-sass/assets/stylesheets/bootstrap/_jumbotron.scss";
+@import "bootstrap-sass/assets/stylesheets/bootstrap/_thumbnails.scss";
+@import "bootstrap-sass/assets/stylesheets/bootstrap/_alerts.scss";
+@import "bootstrap-sass/assets/stylesheets/bootstrap/_progress-bars.scss";
+@import "bootstrap-sass/assets/stylesheets/bootstrap/_media.scss";
+@import "bootstrap-sass/assets/stylesheets/bootstrap/_list-group.scss";
+@import "bootstrap-sass/assets/stylesheets/bootstrap/_panels.scss";
+@import "bootstrap-sass/assets/stylesheets/bootstrap/_responsive-embed.scss";
+@import "bootstrap-sass/assets/stylesheets/bootstrap/_wells.scss";
+@import "bootstrap-sass/assets/stylesheets/bootstrap/_close.scss";
+@import "bootstrap-sass/assets/stylesheets/bootstrap/_modals.scss";
+@import "bootstrap-sass/assets/stylesheets/bootstrap/_tooltip.scss";
+@import "bootstrap-sass/assets/stylesheets/bootstrap/_popovers.scss";
+@import "bootstrap-sass/assets/stylesheets/bootstrap/_carousel.scss";
+// endbower
+
+html, body {
+  overflow-x: hidden;
+}
+
+a {
+  background: linear-gradient(to right, $brand-primary 0%, $brand-primary 100%) 0px 100% / 1px 1px repeat-x;
+}
+
+// Marquee
+
+.cont {
+  width: 100%;
+  overflow: hidden;
+}
+
+.scorri {
+  position: relative;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.tithome-spotify, .tithome-compre-o-disco {
+  animation-name: marquee;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  flex-shrink: 0;
+  padding: 0;
+  li {
+    width: fit-content;
+    display: inline-block;
+    list-style: none;
+    // padding-right: 30px;
+    font-size: 40px;
+    &:after {
+      content: " / "
+    }
+  }
+
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+// Sessao
+
+.sessao {
+  padding: 60px 0;
+  position: relative;
+  z-index: 0;
+}
+
+.sessao-dark {
+  background: $brand-primary;
+  color: #ffffff;
+  a {
+    color: #ffffff;
+    &:hover {
+      color: #f1f1f1;
+    }
+  }
+  a {
+    background: linear-gradient(to right, #fff 0%, #fff 100%) 0px 100% / 1px 1px repeat-x;
+  }
+}
+
+// Helpers
+
+.p-lr-30 {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+// Sessoes
+
+.apresentacao, .album, .contato {
+  font-size: 40px;
+  @media (max-width: 768px){
+    font-size: 24px;
+  }
+}
+
+.gif-voador {
+  max-width: 500px;
+  position: absolute;
+}
+
+.skrollable {
+  z-index: 1;
+  position: relative;
+}
