@@ -16,9 +16,9 @@ angular
     'ngRoute',
     'ngSanitize',
     'ngTouch',
-    "sn.skrollr"
+    // "sn.skrollr"
   ])
-  .config(function ($routeProvider, snSkrollrProvider) {
+  .config(function ($routeProvider) {
     $routeProvider
       .when('/', {
         templateUrl: 'views/main.html',
@@ -29,8 +29,8 @@ angular
         redirectTo: '/'
       });
 
-      snSkrollrProvider.config = { smoothScrolling: true };
-      snSkrollrProvider.disableMobile = true;
+      // snSkrollrProvider.config = { smoothScrolling: true };
+      // snSkrollrProvider.disableMobile = true;
   })
   .run(function(snSkrollr){
     snSkrollr.init();
