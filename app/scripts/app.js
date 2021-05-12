@@ -32,6 +32,6 @@ angular
       // snSkrollrProvider.config = { smoothScrolling: true };
       // snSkrollrProvider.disableMobile = true;
   })
-  .run(function(snSkrollr){
-    snSkrollr.init();
+  .run(function(){
+    // snSkrollr.init();
   });
