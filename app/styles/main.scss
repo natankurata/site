@@ -60,7 +60,7 @@ a {
 
 .tithome-spotify, .tithome-compre-o-disco {
   animation-name: marquee;
-  animation-duration: 8s;
+  animation-duration: 25s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
   flex-shrink: 0;
@@ -119,10 +119,14 @@ a {
 // Sessoes
 
 .apresentacao, .album, .contato {
-  font-size: 40px;
+  font-size: 45px;
   @media (max-width: 768px){
     font-size: 24px;
   }
+}
+
+.link-cursor {
+  cursor: pointer;
 }
 
 .gif-voador {
