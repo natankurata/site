@@ -73,7 +73,8 @@ a {
     // padding-right: 30px;
     font-size: 40px;
     &:after {
-      content: " / "
+      content: " / ";
+      margin: 0 11px 0 6px;
     }
   }
 
